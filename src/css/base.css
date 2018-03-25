@@ -1,0 +1,11 @@
+body {
+    background-color: #002e51;
+    padding: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.element {
+    background-color: #df6b86;
+    border: solid 1px #d5143a;
+}
