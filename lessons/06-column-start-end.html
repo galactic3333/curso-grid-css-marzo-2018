@@ -26,12 +26,14 @@
             /*grid-template-columns: 25% 25% 25% 25%;*/
             /*grid-template-columns: 100px 1fr 2fr 1fr;*/
             /*grid-template-columns: 1fr 1fr;*/
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(6, 1fr);
         }
 
         .element--2 {
-            grid-column: span 2;
-            grid-row: span 3;
+            /*grid-column-start: 3;*/
+            /*grid-column-end: -1;*/
+            grid-column-start: 3;
+            grid-column-end: 5;
             background: brown;
         }
     </style>
