@@ -8,20 +8,23 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 </head>
 <body>
-    <h1>Template Columns & Rows</h1>
+    <h1>Sizing - Fractional Units</h1>
 
     <div class="container">
         <div class="element">1</div>
         <div class="element">2</div>
         <div class="element">3</div>
+        <div class="element">4</div>
     </div>
 
     <style>
         .container {
             display: grid;
             grid-gap: 10px;
-            grid-template-columns: 100px 300px;
-            grid-template-rows: 200px 70px;
+            /*grid-template-columns: 25% 25% 25% 25%;*/
+            /*grid-template-columns: 100px 1fr 2fr 1fr;*/
+            /*grid-template-columns: 1fr 1fr;*/
+            grid-template-columns: repeat(4, 1fr);
         }
     </style>
 </body>
