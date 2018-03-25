@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../src/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+    <h1>Display Grid & Columns</h1>
+
+    <div class="container">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+    </div>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 100px 300px;
+            /*grid-template-rows: 200px 70px;*/
+            grid-auto-flow: column;
+        }
+    </style>
+</body>
+</html>
