@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../src/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+    <h1>Sizing - Span</h1>
+
+    <div class="container">
+        <div class="element">1</div>
+        <div class="element element--2">2</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+    </div>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            /*grid-template-columns: 25% 25% 25% 25%;*/
+            /*grid-template-columns: 100px 1fr 2fr 1fr;*/
+            /*grid-template-columns: 1fr 1fr;*/
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .element--2 {
+            grid-column: span 6;
+        }
+    </style>
+</body>
+</html>
