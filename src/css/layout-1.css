@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 1fr;
     /*grid-template-rows: 80px 100px 100px 200px 100px;*/
     grid-gap: 20px 10px;
+    text-align: center;
 }
 
 .b-header,
@@ -45,6 +46,8 @@
 .b-section--3 {
     grid-column: 1 / -1;
     order: 4;
+    justify-self: center;
+    align-self: center;
 }
 
 .b-footer {
@@ -62,6 +65,8 @@
         grid-column: 2 / 3;
         order: 2;
         grid-row: span 3;
+        background-color: maroon;
+        color: white;
     }
 
     .b-section--1 {
