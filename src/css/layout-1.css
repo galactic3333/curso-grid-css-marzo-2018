@@ -1,0 +1,38 @@
+.b-container {
+
+}
+
+.b-header,
+.b-section--figure {
+    border: 2px solid #BD10E0;
+    background-color: #F9F4F8;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.b-section {
+    background-color: #DF6B86;
+    border: 5px solid #D5143A;
+    padding: 20px;
+    color: black;
+    font-size: 30px;
+}
+
+.b-section--figure {
+
+}
+
+.b-section--1 {
+
+}
+
+.b-section--2 {
+
+}
+
+.b-section--3 {
+
+}
