@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso CSS Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../src/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+    <h1>Grid Areas</h1>
+
+    <div class="container">
+        <nav class="element element--nav">Left Nav</nav>
+        <section class="element element--content">Content</section>
+        <aside class="element element--sidebar">Sidebar</aside>
+    </div>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: 400px;
+            grid-template-areas: "nav c c c c c c c c c c sidebar";
+        }
+
+        .element--nav {
+            background: brown;
+            /*grid-column: 1 / 3;*/
+            grid-area: nav;
+        }
+
+        .element--content {
+            background: beige;
+            color: black;
+            /*grid-column: 3 / -3;*/
+            grid-area: c; /* c = content area */
+        }
+
+        .element--sidebar {
+            grid-column: -3 / -1;
+            grid-area: sidebar;
+        }
+    </style>
+</body>
+</html>
