@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 </head>
 <body>
-    <h1>Grid Areas</h1>
+    <h1>Line names</h1>
 
     <div class="container">
         <nav class="element element--nav">Left Nav</nav>
@@ -21,27 +21,26 @@
         .container {
             display: grid;
             grid-gap: 10px;
-            grid-template-columns: repeat(12, 1fr);
+            grid-template-columns:
+                    [nav-start] 2fr [empty-1] 1fr [nav-end conten-start]
+                    8fr [content-end sidebar-start] 2fr [empty-2] 1fr [sidebar-end];
             grid-auto-rows: 400px;
-            grid-template-areas: "nav c c c c c c c c c c sidebar";
         }
 
         .element--nav {
             background: brown;
-            /*grid-column: 1 / 3;*/
-            grid-area: nav;
+            grid-column: nav-start / nav-end;
+
         }
 
         .element--content {
             background: beige;
             color: black;
-            /*grid-column: 3 / -3;*/
-            grid-area: c; /* c = content area */
+            grid-column: conten-start / content-end;
         }
 
         .element--sidebar {
-            grid-column: -3 / -1;
-            grid-area: sidebar;
+            grid-column: sidebar-start / sidebar-end;
         }
     </style>
 </body>
